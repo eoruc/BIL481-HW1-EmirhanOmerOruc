@@ -17,5 +17,5 @@ BIL481 Homework1 Repository by Emirhan Omer Oruc
 13. Done.
 14. Done.
 15. Done.
-16. 
+16. Done.
 
