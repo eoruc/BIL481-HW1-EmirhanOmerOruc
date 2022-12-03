@@ -31,7 +31,14 @@ public class CallGraphListener extends Java8BaseListener {
   @Override
   public void enterPackageDeclaration(Java8Parser.PackageDeclarationContext ctx) {
     super.enterPackageDeclaration(ctx);
-    packageString = ctx.getChild(1).toString() + ctx.getChild(2).toString() + ctx.getChild(3).toString();
+
+    List<TerminalNode> identifiers = ctx.Identifier();
+    packageString = "";
+
+    for (TerminalNode terminalNode : identifiers) {
+      packageString += terminalNode.toString() + ".";
+    }
+    packageString = packageString.substring(0,packageString.length() - 1);
   }
 
   @Override
