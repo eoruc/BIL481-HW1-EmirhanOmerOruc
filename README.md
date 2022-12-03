@@ -1,18 +1,18 @@
 # BIL481-HW1-EmirhanOmerOruc
 BIL481 Homework1 Repository by Emirhan Omer Oruc
 
-#Tüm .class dosyalarını silmek için terminal script'i
+# Tüm .class dosyalarını silmek için terminal script'i
 find . -type f -name "*.class" -delete
 
-#Aliases
+# Aliases
 antlr4 Java8.g4 -> "alias antlr4="java -jar $ANTLR_JAR"
 run Java8 compilationUnit -gui -> "alias grun="java org.antlr.v4.gui.TestRig""
 
-#Tests
+# Tests
 cat input/test.java | java CallGraphListener | dot -Tpng -o output/test.png
 cat input/test2.java | java CallGraphListener | dot -Tpng -o output/test2.png
 
-#Steps
+# Steps
 1. Antlr installed.
 2. Two commands runned successfully.
 3. Graphviz installed.
