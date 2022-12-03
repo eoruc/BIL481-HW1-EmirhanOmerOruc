@@ -14,6 +14,10 @@ cat input/test.java | java CallGraphListener | dot -Tpng -o output/test.png
 
 cat input/test2.java | java CallGraphListener | dot -Tpng -o output/test2.png
 
+cat input/test3.java | java CallGraphListener | dot -Tpng -o output/test3.png
+
+cat input/test4.java | java CallGraphListener | dot -Tpng -o output/test4.png
+
 # Steps
 1. Antlr installed.
 2. Two commands runned successfully.
