@@ -4,8 +4,7 @@ public class Node {
   private String methodName;
   private String nodeString;
   private boolean isGreen;
-  private static int counter = 0;
-  
+    
   public Node(String packageName, String className, String methodName, boolean isGreen) {
     this.packageName = packageName;
     this.className = className;
