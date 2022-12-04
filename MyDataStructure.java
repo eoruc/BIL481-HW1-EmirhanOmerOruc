@@ -48,11 +48,11 @@ public class MyDataStructure {
   private void addNodesToDotNotation(StringBuilder buf) {
     // buf.append("charset=\"UTF-8\"\n");
     for (Node node : nodes) {
-      buf.append("\"" + node.getNodeString() + "\"");
+      buf.append("\"" + node.getNodeString() + "\" [ shape=circle ");
       if (node.getColor().equals("green")) {
-        buf.append(" [fillcolor=\"green1\" style=\"filled\"]");
+        buf.append(" fillcolor=\"green1\" style=\"filled\"");
       }
-      buf.append(";\n");
+      buf.append("];\n");
     }
   }
 
