@@ -17,10 +17,6 @@ public class MyDataStructure {
     addEdgeToArrayList(searchNode(from), searchNode(to));
   }
 
-  private void addEdgeToArrayList(Node from, Node to) {
-    edges.add(new Edge(from, to));
-  }
-
   public void createDotNotation(StringBuilder buf) {
     addNodesToDotNotation(buf);
     addEdgesToDotNotation(buf);
@@ -65,6 +61,10 @@ public class MyDataStructure {
     }
   }
 
+  private void addEdgeToArrayList(Node from, Node to) {
+    edges.add(new Edge(from, to));
+  }
+  
   private Node searchNode(String nodeString) {
     for (Node node : nodes) {
       if (node.getNodeString().equals(nodeString)) {
