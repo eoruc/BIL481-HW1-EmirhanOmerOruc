@@ -1,7 +1,7 @@
 # BIL481-HW1-EmirhanOmerOruc
 BIL481 Homework1 Repository by Emirhan Omer Oruc
 
-# Tüm .class dosyalarını silmek için terminal script'i
+# to delete *.class files
 find . -type f -name "*.class" -delete
 
 # Aliases
